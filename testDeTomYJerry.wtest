@@ -1,0 +1,23 @@
+import tomYJerry.*
+
+describe "test de ejercicio de tom y jerry" {
+
+  test "Al inicio, la velocidad maxima es 10" {
+    assert.equals(10, tom.velocidadMaxima())
+  }
+}
+
+test "Al inicio, la velocidad maxima es 50" {
+  assert.equals(50, tom.velocidadMaxima())
+}
+
+test "Si tom come a jerry su energia es 102"{
+    tom.comer(jerry)
+    assert.equals(102, tom.energia())
+}
+
+test "Si corre 24 metros, entonces su velocidad maxima pasa a ser 24"{
+    tom.comer(jerry)
+    tom.correr(24)
+    assert.equals(24, tom.velocidadMaxima())
+    }
